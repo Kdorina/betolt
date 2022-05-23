@@ -1,7 +1,7 @@
 <?php
 
-spl_autoload_register(function ($class){
-    include __DIR__."/". str_replace('\\', '/', $class) . '.php';
-});
+use Munka\Dolgozo;
 
-include_once('munka.php');
+$feri = new Dolgozo();
+$feri->nev = "Pala Ferenc";
+echo $feri->nev;
